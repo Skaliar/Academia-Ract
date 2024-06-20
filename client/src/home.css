@@ -222,15 +222,65 @@ header h2 {
   margin-bottom: 0;
 }
 
-@media (max-width: 850px) {
+
+@media (max-width: 850px) and ( min-width: 420px) {
   .courseSection {
     display: flex;
     flex-direction: column;
   }
+  .tittle-search select{
+    padding: 0;
+    width: 0.8rem;
+  }
+  .tittle-search input{
+    width: 2rem;
+  }
+.tittle-search .tittle{
+  font-size: 0.9rem;
+}
+.footer-body{
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+.footer-body h3{
+  font-size: 1rem;
+}
+.footer-body div{
+ padding: 0;
+}
+.footer-footer{
+  font-size: 0.7rem;
+  padding-bottom: 0;
+  padding-top: 10;
+}
 
+.tittle-search .addBtn{
+  margin-left: 30;
+  margin-right: 70px;
+}
+
+.pagination{
+  font-size: 0.8rem;
+}
+.buttonPagination a{
+  padding-right: 0px;
+}
+
+.buttonPagination span{
+visibility: hidden;
+}
   .courseSection > aside {
     width: 100%;
   }
+ .table.table-striped.table-bordered{
+  font-size: smaller;
+  width: auto;
+  }
+
+  .table.table-striped.table-bordered svg{
+    width: 0.5em;
+  }
+
   header h2{
     font-size: 1rem;
   }
@@ -263,6 +313,10 @@ header h2 {
     padding: 0;
 
   }
+  .container{
+    padding: 0;
+  }
+
 }
 
 .upload {

@@ -120,6 +120,9 @@ export default function ListCurso({ title, accion }) {
     getCursos();
   }, []);
 
+  const{ usersContext } = useUsersContext();
+  const isAdmin = usersContext.role === "isAdmin"
+
   return (
     <>
     <AccessProfil allowedRoles={["isAdmin", "isStudent", "isTeacher", "guest"]}>
@@ -138,9 +141,11 @@ export default function ListCurso({ title, accion }) {
                     onPageChange={handlePageChange}
                   />
                 </div>
+                {isAdmin && (
                 <button className="addBtn" onClick={handleAddCursos}>
                   <IoMdAdd />
                 </button>
+                )}
               </div>
               <table className="table table-striped table-bordered">
                 <thead>

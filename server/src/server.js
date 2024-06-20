@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "/public")));
-app.use("/imagens", express.static(path.join(__dirname, "/public")));
+app.use("/api/v3/image", express.static(path.join(__dirname, "/public")));
 app.use("/uploads", express.static(path.join(__dirname, "/public")));
 
 /* ******************************************** */

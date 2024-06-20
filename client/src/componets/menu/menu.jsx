@@ -54,14 +54,14 @@ function Menu() {
     {
       title: "Administración",
       subItems: [
-        { title: "Gestión de Cursos", route: "/cursos",roles: [ "isStudent"], },
+        { title: "Gestión de Cursos", route: "/cursos",roles: [ "isStudent", "isAdmin", "isTeacher"], },
         { title: "Gestión de Estudiante", route: "/students",roles: [], },
         { title: "Gestión de Profesores", route: "/teachers",roles: [], },
-        { title: "Matriculación de Cursos", route: "/matricula",roles: ["isStudent", "isAdmin"]},
+        { title: "Matriculación de Cursos", route: "/matricula",roles: ["isAdmin"]},
         { title: "Usuarios", route: "/users",roles: [], },
         { title: "Contactos", route: "/contact",roles: [], },
       ],
-      roles: ["isAdmin", "isTeacher"], 
+      roles: ["isAdmin"], 
     },
     {
       title: "Cursos",

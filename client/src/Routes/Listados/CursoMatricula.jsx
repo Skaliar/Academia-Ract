@@ -153,7 +153,6 @@ export default function ListMatricula({ title, accion }) {
                     {/* <th scope="col">#</th> */}
                     <th scope="col">Curso</th>
                     <th scope="col">Profesor</th>
-                    <th scope="col">Alúmno</th>
                     <th scope="col">Túrno</th>
                    
                   </tr>
@@ -174,7 +173,7 @@ export default function ListMatricula({ title, accion }) {
                                 <tr key={matricula._id}>
                                 <td>{matricula.curso}</td>
                                 <td>{`${matricula.profesor}`} </td>
-                                <td>{`${matricula.student}`} </td>
+                              
                                 <td>{`${matricula.turno}`} </td>
                               </tr>
                               );

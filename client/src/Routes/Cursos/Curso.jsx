@@ -102,7 +102,7 @@ export default function Curso({ curso, edit, riviewList }) {
 
   const handleSubImg = async () => {
     const formData = new FormData();
-    formData.append("imageCourse", imageCourse);
+    formData.append("urlImage", imageCourse);
     const urlServer = `${hostServer}/api/v3/image`;
     try {
       const response = await fetch(urlServer, {
@@ -234,6 +234,8 @@ export default function Curso({ curso, edit, riviewList }) {
       });
     });
   };
+  
+
 
   return (
     <>
