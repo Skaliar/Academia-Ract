@@ -9,7 +9,7 @@ const dbmongo_db = process.env.DB_DATABASE;
 
 //const MONGODB_URL = `mongodb://${dbmonto_host}/${dbmongo_db}`;
 
-const MONGODB_URL = process.env.DB_MONGO_URI;
+const MONGODB_URL = process.env.DB_MONGO_URL;
 
 mongoose
   .connect(MONGODB_URL, {})
